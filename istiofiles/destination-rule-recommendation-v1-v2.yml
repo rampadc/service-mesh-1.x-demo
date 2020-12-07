@@ -4,6 +4,9 @@ metadata:
   name: recommendation
 spec:
   host: recommendation
+  trafficPolicy:
+    tls:
+      mode: ISTIO_MUTUAL
   subsets:
   - labels:
       version: v1
@@ -11,4 +14,3 @@ spec:
   - labels:
       version: v2
     name: version-v2
----

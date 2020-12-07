@@ -43,5 +43,3 @@ spec:
       attempts: 1
       perTryTimeout: 5s
       retryOn: "506"
-
----
